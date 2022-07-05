@@ -10,6 +10,10 @@ class App extends Component {
     }
   }
 
+  handleGameplay = (index) => {
+    alert(index)
+  }
+
   render() {
     return(
       <>
@@ -20,6 +24,8 @@ class App extends Component {
           <Square 
             key={index}
             value={value}
+            index={index}
+            handleGameplay={this.handleGameplay}
           />
           )
         })}
