@@ -11,7 +11,10 @@ class App extends Component {
   }
 
   handleGameplay = (index) => {
-    alert(index)
+   // alert(index)
+    const { board } = this.state
+    board[index] = "🏝"
+    this.setState({board: board})
   }
 
   render() {
